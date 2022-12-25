@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Student Data</string>
+    <string name="nocon">No Content</string>
+    <string name="studentData">Student Data</string>
+    <string name="read_data">Read Data</string>
+    <string name="enter_your_school">Enter your School</string>
+    <string name="enter_your_zsid">Enter your ZSid</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_gender">Enter your Gender</string>
+    <string name="doneButton">Done</string>
+    <string name="enter_zsid">Enter ZSid</string>
+    <string name="viewButton">View Data</string>
+</resources>

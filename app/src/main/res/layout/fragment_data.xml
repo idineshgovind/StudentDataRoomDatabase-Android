@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FA9EA7"
+        tools:context=".DataFragment">
+
+
+        <TextView
+            android:id="@+id/sclTitle"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:text="School:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag2"
+            app:layout_constraintVertical_bias="0.597" />
+
+        <TextView
+            android:id="@+id/inputFrag2"
+            android:layout_width="273dp"
+            android:layout_height="47dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/cantora_one"
+            android:text="@string/studentData"
+            android:textAlignment="center"
+            android:textColor="#5C606F"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:text="Name :"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag2"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <TextView
+            android:id="@+id/nameShow"
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:text="No Data"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameTitle"
+            app:layout_constraintEnd_toEndOf="@+id/nameTitle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/nameTitle"
+            app:layout_constraintTop_toTopOf="@+id/nameTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/zsidTitle"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:text="ZSid    :"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag2"
+            app:layout_constraintVertical_bias="0.246" />
+
+        <TextView
+            android:id="@+id/zsidShow"
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:text="No Data"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/zsidTitle"
+            app:layout_constraintEnd_toEndOf="@+id/zsidTitle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/zsidTitle"
+            app:layout_constraintTop_toTopOf="@+id/zsidTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/genTitle"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:text="Gender:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag2"
+            app:layout_constraintVertical_bias="0.421" />
+
+        <TextView
+            android:id="@+id/genShow"
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:text="No Data"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/genTitle"
+            app:layout_constraintEnd_toEndOf="@+id/genTitle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/genTitle"
+            app:layout_constraintTop_toTopOf="@+id/genTitle"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/sclShow"
+            android:layout_width="213dp"
+            android:layout_height="49dp"
+            android:text="No Data"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sclTitle"
+            app:layout_constraintEnd_toEndOf="@+id/sclTitle"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/sclTitle"
+            app:layout_constraintTop_toTopOf="@+id/sclTitle"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="128dp"
+            android:layout_height="57dp"
+            android:backgroundTint="#5375E2"
+            android:text="Delete All"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag2"
+            app:layout_constraintVertical_bias="0.783" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FA9EA7"
+        tools:context=".InputFragment">
+
+        <TextView
+            android:id="@+id/readData"
+            android:layout_width="273dp"
+            android:layout_height="47dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="@string/read_data"
+            android:textAlignment="center"
+            android:textColor="#5C606F"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.798" />
+
+        <EditText
+            android:id="@+id/sclText"
+            android:layout_width="222dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_your_school"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="@drawable/edittext_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag"
+            app:layout_constraintVertical_bias="0.449"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/inputFrag"
+            android:layout_width="273dp"
+            android:layout_height="47dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/cantora_one"
+            android:text="@string/studentData"
+            android:textAlignment="center"
+            android:textColor="#5C606F"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <EditText
+            android:id="@+id/zsidText"
+            android:layout_width="222dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_your_zsid"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="@drawable/edittext_selector"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="222dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_your_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="@drawable/edittext_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag"
+            app:layout_constraintVertical_bias="0.196"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/genText"
+            android:layout_width="222dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_your_gender"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="@drawable/edittext_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag"
+            app:layout_constraintVertical_bias="0.317"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/readButton"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#5375E2"
+            android:text="@string/doneButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sclText"
+            app:layout_constraintVertical_bias="0.134" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/readButton"
+            app:layout_constraintVertical_bias="0.12" />
+
+        <EditText
+            android:id="@+id/zsidRead"
+            android:layout_width="189dp"
+            android:layout_height="54dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_zsid"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="@drawable/edittext_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrag"
+            app:layout_constraintVertical_bias="0.877"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="129dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#5375e2"
+            android:text="@string/viewButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toEndOf="@+id/zsidRead"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.899" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
